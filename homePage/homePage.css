@@ -1,0 +1,76 @@
+.container-fluid{
+  width:80%;
+  margin-top:1em;
+}
+
+#navlist{
+  position: -webkit-sticky;
+    position: sticky;
+    top: 0; 
+  position: sticky;
+}
+ul#navlist{
+  font-size: 1.3em;
+  margin:0;
+  padding:0;
+  list-style-type: none;
+}
+
+ul#navlist li{
+  display:inline;
+}
+
+ul#navlist li a{
+  float: right;
+  padding: 0.2em 1em;
+  width: auto;
+  color: #aaa;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ul#navlist li a:hover{
+  color: #f5a61f;
+}
+
+#navlist img{
+  height : 15%;
+  width :15%;
+}
+
+.container{
+  font-weight:bold;
+  height:100%;
+  width:100%;
+  text-align:center;
+  margin-top: 5em;
+}
+
+.homeScreen > div{
+  font-size: 4em;
+}
+
+.homeScreen div:first-child{
+  margin-top: 3em;
+  font-size:1.1em;
+  margin-bottom: 1em;
+}
+
+.psColor{
+  color:#f5a61f;
+}
+
+.homeScreen .btn{
+  margin-top:1em;
+  background-color: #f5a61f;
+  color: white;
+  font-size: 1.5em;
+}
+
+.homeScreen .btn:hover{
+  background-color:red;
+}
+
+#whatis,#ourpartners,#about{
+  margin: 15em auto;
+}
