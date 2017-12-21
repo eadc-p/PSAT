@@ -1,0 +1,18 @@
+*{
+
+}
+
+.psLogoTop{
+
+    background:url('https://cdn.planetspark.in/assets/logo-b9bf26058dffd8cb17a247d541132bd8a77493850fb368e1cb2000b007a79b64.png') no-repeat center center;
+
+    background-size:50% 50%;
+
+}
+
+.left{
+  float:left;
+}
+.right{
+  float:right;
+}

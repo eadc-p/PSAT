@@ -1,0 +1,88 @@
+
+@import url(https://fonts.googleapis.com/css?family=Archivo+Black);
+*{
+  text-transform:capitalize;
+  font-weight:bold;
+  font-family:Archivo Black;
+  border:solid 1px black;
+}
+
+#logo1{
+  display:block;
+  margin: 1em auto;
+  height:4em;
+  width:auto;
+}
+
+#tabl{
+  padding:1em;
+  width :100%;
+  margin: 15px auto;
+  border-collapse: collapse;
+}
+
+a{
+  color:rgb(57, 168, 70);
+}
+.col-xs-12:last-child{
+  margin-top:1em;
+  text-align:center;
+}
+[class=.col-*]{
+  display:flex;
+  align-items:center;
+}
+.start{
+  background-color:#f5a61f;
+}
+.completed{
+  background-color:rgb(57, 168, 70);
+}
+
+.row{
+  margin-bottom: 1em;
+}
+
+.main{
+  margin-top:5em;
+}
+
+.homeBar{
+  margin: 5em auto 3em auto;
+  color:white;
+  background-color:#f5a61f;
+  border-radius: 6px;
+  padding: 1em;
+}
+.left{
+  float:left;
+}
+.right{
+  float:right;
+}
+
+img{
+  display:block;
+  margin: auto auto;
+  height:4em;
+  width:auto;
+}
+
+.btn{
+  background-color:#;
+  color:white;
+  width:80%;
+  margin:auto;
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  .header-hide {
+    display: block;
+  }  /* show it on small screens */
+}
+
+@media screen and (min-width: 401px) and (max-width: 1500px) {
+  .header-hide {
+    display: none;
+  }   /* hide it elsewhere */
+}
