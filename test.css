@@ -1,3 +1,6 @@
+body{/*
+background-color: #eaba6e ;*/
+}
 .form-inline{
   float: right; !important
   border:solid 1px;
@@ -5,4 +8,49 @@
 
 .navbar img{
   width: 16.6%;
+}
+
+.nav-item .nav-link{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.nav-link:hover{
+  color: #f5a61f !important;
+}
+
+
+.container{
+  font-weight:bold;
+  text-align:center;
+  margin-top: 10em;
+}
+
+.homeScreen > div{
+  font-size: 4em;
+}
+
+.homeScreen div:first-child{
+  margin-top: 3em;
+  font-size:1.1em;
+  margin-bottom: 1em;
+}
+
+.psColor{
+  color:#f5a61f;
+}
+
+.homeScreen .btn{
+  margin-top:1em;
+  background-color: #f5a61f;
+  color: white;
+  font-size: 1.5em;
+}
+
+.homeScreen .btn:hover{
+  background-color:red;
+}
+
+#whatis,#ourpartners,#about{
+  margin: 15em auto;
 }
