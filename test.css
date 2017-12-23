@@ -1,5 +1,6 @@
 body{/*
 background-color: #eaba6e ;*/
+  background: linear-gradient(white,#f5a61f);
 }
 .form-inline{
   float: right; !important
@@ -13,6 +14,11 @@ background-color: #eaba6e ;*/
 .nav-item .nav-link{
   font-size: 1.1rem;
   font-weight: bold;
+  color: #aaa;
+}
+
+.nav-link:active{
+  color: #f5a61f;
 }
 
 .nav-link:hover{
