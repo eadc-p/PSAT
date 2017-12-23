@@ -21,6 +21,10 @@ background-color: #eaba6e ;*/
   color: #f5a61f;
 }
 
+.fixed-top{
+    background-color: #fff !important;
+    border: solid 1px #ddd;
+}
 .nav-link:hover{
   color: #f5a61f !important;
 }
@@ -34,6 +38,7 @@ background-color: #eaba6e ;*/
 
 .homeScreen > div{
   font-size: 4em;
+  text-shadow: 1px 1px 2px grey;
 }
 
 .homeScreen div:first-child{
@@ -51,12 +56,24 @@ background-color: #eaba6e ;*/
   background-color: #f5a61f;
   color: white;
   font-size: 1.5em;
+  box-shadow: 4px 4px 5px #aaa;
 }
 
 .homeScreen .btn:hover{
-  background-color:red;
+  background-color: #39a846;
 }
 
-#whatis,#ourpartners,#about{
-  margin: 15em auto;
+body{
+  padding-bottom: 5rem !important;
+}
+
+#whatis{
+  margin-top:5em;
+}
+
+.anchor{
+  display: block;
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
 }
