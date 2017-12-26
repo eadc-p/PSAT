@@ -8,8 +8,11 @@
   <script src="/users/anant_000/Documents/jquery-3.2.1.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
   <script src="homePage.js">
   </script>
+
+  <link rel="stylesheet" type="text/css" href="ss.css" />
   <link rel="stylesheet" type="text/css" href="homePage.css" />
 </head>
 
@@ -32,7 +35,7 @@
     <div class="container homeScreen">
       <div>Planet Spark Aptitude Test</div>
       <div>Your gateway into teaching<span class="psColor">.</span></div>
-      <a href="#" class="btn">BEGIN YOUR ASSESMENT</a>
+      <a href="#" class="btn" id="beginAssesment">BEGIN YOUR ASSESMENT</a>
     </div>
 
     <div class="container" id="whatis">
@@ -78,4 +81,102 @@
     </div>
 
   </div>
+  <div class="modal fade" id="myModalLogin" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="text" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div>
+              <button type="submit" class="btn btn-success btn-block" id="loginClick" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p>Not a member? <a href="#">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModalSlot" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Pick a Slot</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="row" style="margin:auto;">
+              <div class="btn-group" data-toggle="buttons" style="width:100%; padding=auto;">
+                <label class="btn btn-outline-warning active col-4">
+                <input type="radio" name="options" id="option1" /> Today
+                </label>
+                <label class="btn btn-outline-warning col-4">
+                <input type="radio" name="options" id="option2" /> Tomorrow
+                </label>
+                <label class="btn btn-outline-warning col-4">
+                <input type="radio" name="options" id="option3"  /> Friday
+                </label>
+              </div>
+            </div>
+            <div class="time-picker-container" style="">
+              <input type="radio" name="AppointmentDateTime" id="radio-morning" class="disabled" />
+              <input type="radio" name="AppointmentDateTime" id="radio-afternoon" />
+              <input type="radio" name="AppointmentDateTime" id="radio-evening" />
+              <input type="radio" name="AppointmentDateTime" id="radio-night" />
+              <div class="clock-container">
+                <label for="radio-morning" class="pie pie-morning">
+                <span>Morning</span>
+                </label>
+                <label for="radio-afternoon" class="pie pie-afternoon">
+                <span>Afternoon</span>
+                </label>
+                <label for="radio-night" class="pie pie-night">
+                <span>Night</span>
+                </label>
+                <label for="radio-evening" class="pie pie-evening">
+                <span>Evening</span>
+                </label>
+              </div>
+              <p class="date-display">
+                27/12/2017
+              </p>
+              <p class="time-display">
+                <span class="time-display-inner">
+                <span>8AM to 12PM</span>
+                <span>12PM to 4PM</span>
+                <span>4PM to 8PM</span>
+                <span>8PM to 12AM</span>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-block btn-success" data-dismiss="modal">Confirm Slot</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 </body>
