@@ -101,6 +101,7 @@ body {
 }
 
 .time-picker-container {
+
   position: relative;
   border: solid 1px #f0ad4e;
   background-color: #fff;
@@ -113,23 +114,42 @@ body {
   display: none;
 }
 
-h6.time-display {
+p.time-display {
+  border-radius: 5%;
+
   margin: 0;
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 50%;
+  width: 40%;
   overflow: hidden;
   height: 40px;
-  background: #f0ad4e;
-  
+  background: white;
+  color:#f0ad4e;
   text-align: center;
   font-weight: bold !important;
   line-height: 40px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
+p.date-display{
+  border-radius: 5%;
+  font-size:1.5em;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  width: 40%;
+  overflow: hidden;
+  height: 40px;
+  background: white;
+  color:#f0ad4e;
+  text-align: center;
+  font-weight: bold !important;
+  line-height: 40px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 span.time-display-inner {
   display: block;
   -webkit-transition: all 300ms ease-in-out;
