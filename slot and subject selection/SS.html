@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>
+  </title>
+
+  <script src="/users/anant_000/Documents/jquery-3.2.1.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="ss.js"></script>
+  <link rel="stylesheet" type="text/css" href="ss.css" />
+</head>
+<body>
+  <!--
+  <div class="modal-body">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
+      <div class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-9">
+        Level 1: .col-sm-9
+        <div class="row">
+          <div class="col-8 col-sm-6">
+            Level 2: .col-8 .col-sm-6
+          </div>
+          <div class="col-4 col-sm-6">
+            Level 2: .col-4 .col-sm-6
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+<div class="container">
+  <h2>Basic Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <h4 class="modal-title">Pick a Slot</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="row" style="margin:auto;">
+
+
+          <div class="btn-group" data-toggle="buttons" style="width:100%; padding=auto;">
+  <label class="btn btn-outline-warning active col-4">
+    <input type="radio" name="options" id="option1" /> Today
+  </label>
+  <label class="btn btn-outline-warning col-4">
+    <input type="radio" name="options" id="option2" /> Tomorrow
+  </label>
+  <label class="btn btn-outline-warning col-4">
+    <input type="radio" name="options" id="option3"  /> Friday
+  </label>
+</div>
+</div>
+          <div class="time-picker-container" style="">
+  <input type="radio" name="AppointmentDateTime" id="radio-morning" class="disabled" />
+  <input type="radio" name="AppointmentDateTime" id="radio-afternoon" />
+  <input type="radio" name="AppointmentDateTime" id="radio-evening" />
+  <input type="radio" name="AppointmentDateTime" id="radio-night" />
+  <div class="clock-container">
+    <label for="radio-morning" class="pie pie-morning">
+      <span>Morning</span>
+    </label>
+    <label for="radio-afternoon" class="pie pie-afternoon">
+      <span>Afternoon</span>
+    </label>
+    <label for="radio-night" class="pie pie-night">
+      <span>Night</span>
+    </label>
+    <label for="radio-evening" class="pie pie-evening">
+      <span>Evening</span>
+    </label>
+
+  </div>
+
+  <h6 class="time-display">
+                            <span class="time-display-inner">
+                                <span>8AM to 12PM</span>
+                                <span>12PM to 4PM</span>
+                                <span>4PM to 8PM</span>
+                                <span>8PM to 12AM</span>
+                            </span>
+                        </h2>
+</div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
