@@ -5,13 +5,17 @@ $(document).ready(function(){
         $("#myModalLogin").modal();
     });
 
-    //open modal for slot selection page from the login
+    //open modal for subject selection
     $('#loginClick').click(function(){
+      $("#myModal-chooseSubject").modal();
+    });
+    //open modal for slot selection page from the login
+    $('.modal-footer .btn.next').click(function(){
       $("#myModalSlot").modal();
     });
 
     //setting up initial date
-    $('.date-display').text(disDate(0)); 
+    $('.date-display').text(disDate(0));
 
     //Changing date display for different selections
     $('label.btn-outline-warning:nth-child(1)').click(function(){

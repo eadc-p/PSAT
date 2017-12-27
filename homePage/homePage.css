@@ -87,3 +87,6 @@ ul#navlist li a:hover{
   .modal-footer {
       background-color: #f9f9f9;
   }
+  #myModal-chooseSubject .form-check-label span {
+    color: #ccc;
+  }
