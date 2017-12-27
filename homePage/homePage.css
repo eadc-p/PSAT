@@ -1,55 +1,46 @@
-.container-fluid{
-  width:80%;
-  margin-top:4em;
+body{/*
+background-color: #eaba6e ; #fce5bd
+  background: linear-gradient(white,#f5a61f);*/
+  background-color: #fff;
+
+}
+.form-inline{
+  float: right; !important
+  border:solid 1px;
 }
 
-#navlist{
-  overflow: hidden;
-  background-color: rgba(255,255,255,1);
-  position: fixed;
-  top: 0;
-  width:100%;
-  opacity: 1;
-}
-ul#navlist{
-  font-size: 1.3em;
-  margin:0;
-  padding:0;
-  list-style-type: none;
+.navbar img{
+  width: 16.6%;
 }
 
-ul#navlist li{
-  display:inline;
-}
-
-ul#navlist li a{
-  float: right;
-  padding: 0.2em 1em;
-  width: auto;
-  color: #aaa;
+.nav-item .nav-link{
+  font-size: 1.1rem;
   font-weight: bold;
-  text-decoration: none;
+  color: #aaa;
 }
 
-ul#navlist li a:hover{
+.nav-link:active{
   color: #f5a61f;
 }
 
-#navlist img{
-  height : 15%;
-  width :15%;
+.fixed-top{
+    background-color: #fff !important;
+    border: solid 1px #ddd;
 }
+.nav-link:hover{
+  color: #f5a61f !important;
+}
+
 
 .container{
   font-weight:bold;
-  height:100%;
-  width:100%;
   text-align:center;
-  margin-top: 5em;
+  margin-top: 10em;
 }
 
 .homeScreen > div{
   font-size: 4em;
+  text-shadow: 1px 1px 2px grey;
 }
 
 .homeScreen div:first-child{
@@ -67,10 +58,26 @@ ul#navlist li a:hover{
   background-color: #f5a61f;
   color: white;
   font-size: 1.5em;
+  box-shadow: 4px 4px 5px #aaa;
 }
 
 .homeScreen .btn:hover{
-  background-color:red;
+  background-color: #39a846;
+}
+
+body{
+  padding-bottom: 5rem !important;
+}
+
+#whatis{
+  margin-top:5em;
+}
+
+.anchor{
+  display: block;
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
 }
 
 #whatis,#ourpartners,#about{
